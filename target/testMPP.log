@@ -1,0 +1,3 @@
+22 Mar 2021 19:01:23,350 INFO  motorcycleraces.repository.UserDBRepository 18 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite://D://UBB//anul 2//sem2//MPP//proiectlab//databases//users.db} 
+23 Mar 2021 00:04:12,889 INFO  motorcycleraces.repository.UserDBRepository 18 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite://D://UBB//anul 2//sem2//MPP//proiectlab//databases//users.db} 
+23 Mar 2021 00:14:36,669 INFO  motorcycleraces.repository.UserDBRepository 18 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite://D://UBB//anul 2//sem2//MPP//proiectlab//databases//users.db} 
