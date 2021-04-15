@@ -1,0 +1,6 @@
+package rpcprotocol;
+
+
+public enum RequestType {
+    LOGIN, LOGOUT, ADDPARTICIPANT, FINDPARTICIPANT, FINDRACES, UPDATERACE, FINDTEAMS;
+}

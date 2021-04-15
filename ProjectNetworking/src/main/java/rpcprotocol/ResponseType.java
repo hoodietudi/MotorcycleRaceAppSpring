@@ -1,0 +1,7 @@
+package rpcprotocol;
+
+
+public enum ResponseType {
+    OK, ERROR, UPDATE, ADDPARTICIPANT, FINDPARTICIPANT, FINDRACES, UPDATERACE, FINDTEAMS, LOGIN;
+
+}

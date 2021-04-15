@@ -1,2 +1,8 @@
 rootProject.name = 'proiectlab'
+include 'ClientFX'
+include 'ClientModel'
+include 'ProjectNetworking'
+include 'ProjectPersistence'
+include 'ProjectServices'
+include 'Server'
 

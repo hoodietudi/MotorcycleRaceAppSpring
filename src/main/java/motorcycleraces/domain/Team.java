@@ -1,20 +1,45 @@
 package motorcycleraces.domain;
 
 import java.util.List;
+import java.util.Objects;
 
-public class Team extends Entity<String>{
-    List<Participant> participants;
+public class Team extends Entity<Long>{
 
-    public Team(String name, List<Participant> participants) {
-        this.participants = participants;
-        setId(name);
+    String name;
+
+    public Team(Long id,String name) {
+        this.setId(id);
+
+        this.name = name;
     }
 
-    public List<Participant> getParticipants() {
-        return participants;
+    public Team(String name) {
+
+        this.name = name;
     }
 
-    public void setParticipants(List<Participant> participants) {
-        this.participants = participants;
+
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Team team = (Team) o;
+        return Objects.equals(name, team.name) &&
+                Objects.equals(this.getId(), team.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.getId(),name);
+    }
+
 }

@@ -3,6 +3,7 @@ package motorcycleraces.repository;
 import motorcycleraces.domain.Entity;
 import motorcycleraces.domain.validators.ValidationException;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * CRUD operations repository interface
@@ -27,7 +28,7 @@ public interface IRepository<ID, E extends Entity<ID>> {
      *
      * @return all entities
      */
-    Iterable<E> findAll();
+    List<E> findAll();
 
     /**
      * saves an entity
